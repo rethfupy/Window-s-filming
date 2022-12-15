@@ -1,0 +1,250 @@
+* {box-sizing:border-box}
+
+body{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, "Lucida Grande", sans-serif;
+	line-height: 150%;
+	font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  	font-family: "Trebuchet MS", sans-serif;
+}
+
+.icon{
+	width: 32px;
+}
+
+.fheader{
+	text-align: center; 
+	padding: 15px 0;
+}
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	box-shadow: 0px 1px #404040;
+}
+
+.py-6{
+    padding-top: 6rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.fscreen{
+	min-height: 80vh;
+/*	background: center / cover no-repeat url("../images/bg3.jpg");*/
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url('../images/bg3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+}
+
+.fscreen__section{
+	min-height: inherit;
+}
+
+.fscreen__block{
+	color: #fff;
+/*	text-shadow: 1px 1px 2px #fff;*/
+}
+
+@media (max-width: 768px){
+	.scenter{
+		text-align: center;
+	}
+	.sjustify{
+		text-align: justify;
+	}
+}
+
+.btn-primary {
+/*    color: #000;
+    background-color: #E6FFFB;
+    border-color: #E6FFFB;*/
+    margin-top: 30px;
+}
+
+.card-header {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.bg-var{
+	background-color: #fff;
+}
+
+/***********************/
+/*      FEATURES       */
+/***********************/
+
+@media (min-width: 768px){
+	.features{
+		margin-top: 20px;
+	}
+}
+
+
+/***********************/
+/*       GALLERY       */
+/***********************/
+
+.slideshow-container {
+  max-width: 1320px;
+  position: relative;
+  margin: auto;
+  height: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 0px 5px #000000;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fader {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/***********************/
+/*       PRICING       */
+/***********************/
+
+.card-deck .card {
+	margin-bottom: 15px;
+}
+
+.card-deck .card {
+	min-width: 220px;
+}
+
+@media (min-width: 576px){
+	.card-deck .card {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-flex: 1;
+		-ms-flex: 1 0 0%;
+		flex: 1 0 0%;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		margin-right: 15px;
+		margin-bottom: 0;
+		margin-left: 15px;
+	}
+}
+
+.card-deck {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+@media (min-width: 576px){
+	.card-deck {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+}
+
+.pricing .scenter{
+	text-align: center;
+}
+.pricing .sjustify{
+	text-align: justify;
+}
+.pricing .align-self-center{
+	margin: 0 auto;
+}
+
+ul.mt-3{
+	text-align: left;
+}
+
+/***********************/
+/*       SERVICES      */
+/***********************/
+
+.services{
+	min-height: 80vh;
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9) ), url('../images/bg4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+	color: #fff;
+}
